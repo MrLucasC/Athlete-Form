@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 id="title">Athlete Form</h1>
+    <p id="description">Help us collect data on the daily life of athletes.</p>
+    
+    <form id="survey-form">
+        
+        <fieldset>
+            <label id="name-label" for="name">Full-Name:</label>
+            <input class="name" type="text" id="name" name="name" placeholder="Enter your first and last name" required>
+            
+            <label id="email-label" for="email">Email:</label>
+            <input class="email" type="email" id="email" name="email" placeholder="Enter your email" required>
+            
+            <label id="number-label" for="number">Age:</label>
+            <input class="age" type="number" id="number" name="number" placeholder="Age" min="18" max="100" required>
+        
+
+        <div class="p-group">
+            <p>Number of training per week</p>
+        </div>
+            
+            
+            <select id="dropdown" name="dropdown">
+                <option value="option1" disabled selected>Select an option...</option>
+                <option value="option1">1 day</option>
+                <option value="option2">2 days</option>
+                <option value="option2">3 days</option>
+                <option value="option2">4 days</option>
+                <option value="option2">5 days</option>
+                <option value="option2">6 days</option>
+                <option value="option2">7 days</option>
+                
+            </select>
+            <div class="p-group">
+            <p>Do you play a team sport?</p>
+            </div>
+            <div class="radio-button">
+                <input class="radio-group1" type="radio" id="yes" name="team-sport" value="yes">
+                <label class="radio-group" for="yes">Yes</label>
+            
+                <input class="radio-group1" type="radio" id="no" name="team-sport" value="no">
+                <label class="radio-group" for="no">No</label>
+            </div>
+        
+            
+            <div class="p-group">
+            <p> What injuries have you had? (Select all that apply)</p>        
+            </div>
+
+            <div class="all-checkbox">
+            <div class="checkbox-group">
+            <input type="checkbox" id="Nothing" name="activities" value="Nothing">
+            <label for="Nothing">Nothing</label>
+            </div>
+
+            <div class="checkbox-group">
+            <input type="checkbox" id="Broken bones" name="activities" value="Broken bones">
+            <label for="Broken bones">Broken bones</label>
+            </div>
+            <div class="checkbox-group">
+            <input type="checkbox" id="Sprain" name="activities" value="Sprain">
+            <label for="Sprain">Sprain</label>
+            </div>
+            <div class="checkbox-group">
+            <input type="checkbox" id="Wound" name="activities" value="Wound">
+            <label for="Wound">Wound</label>
+            </div>
+            <div class="checkbox-group">
+            <input type="checkbox" id="Muscle tear" name="activities" value="Muscle tear">
+            <label for="Muscle tear">Muscle tear</label>
+            </div>
+            </div>
+
+            <div class="commentsarea">
+            <label for="comments">Any comments or suggestions?</label>
+            </div>
+            <textarea id="comments" name="comments" placeholder="Enter your comments here..."></textarea>
+        
+
+        <button id="submit" type="submit">Submit</button>
+        </fieldset>
+    </form>
+</body>
+</html>
